@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">  
+		<title></title>
+		<script type="text/javascript">
+			/*
+A			 * 		这个隐含的参数就是this
+			 * 		这个对象我们称为函数执行 上下文对象
+			 * 		根据函数的调用方式的不同,this会指向不用的对象
+			 */
+			
+			function fun(){
+				console.log(this)
+			};
+			
+			var obj = {
+				name : '张三',
+				sayName : fun
+			};
+			
+			// console.log(onj.sayName == fun) // True
+			fun() // ----> this 指向 window
+			obj.sayName();  // ----> this 指向Object（当前指obj函数对象）
+			
+			
+			
+			// 补充
+			/*
+			 * 	1.当以函数的形式调用时，this是window
+			 * 	2.当以方法的形式调用时，谁调用方法this就时谁
+			 * 	3.当以构造函数的形式调用时，this就时新创建的那个对象
+			 */
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

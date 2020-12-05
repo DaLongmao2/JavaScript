@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 * 	函数
+			 * 
+			 * 	1.函数也是一个对象
+			 * 	2.函数中可以封装一些功能(代码),在需要时可以执行这些功能
+			 *  3.函数可以保存一些代码在需要的时候调用
+			 * 
+			 * 	4.函数里面的代码不会立即执行，会在函数调用的时候去执行
+			 * 
+			 * 	函数调用:函数对象 加  括号  --->>  fun()
+			 * 	
+			 * 	5.函数对象拥有其他对象所有的功能
+			 * 
+			 * 	6.我们开发中很少使用构造函数来创建
+			 * 
+			 * 	7.一般使用函数声明来创建一个函数
+			 * 		语法：
+			 * 			function 函数名([形参1,形参2...形参N]){
+			 *				语句...		
+			 * 			}
+			 * 		
+			 * 		函数的实参可以使任意  数据类型
+			 * 		解析器不会检查实参的类型,所有要注意,是否接收到的实参是非法类型
+			 * 		解释器也不会检查传入实参的数量
+			 * 
+			 *  8.匿名函数：
+			 * 		语法：
+			 * 			var 函数名 = function(){
+			 * 				console.log('我是匿名函数中封装的代码')
+			 *  		}
+			 * 
+			 * 
+			 * 	9.return  break continue 三者区别 
+			 * 		return 结束整个函数体
+			 * 		break 结束最进的循环体
+			 * 		continue 跳过当次循环
+			 */
+			// 方式一:
+			var fun = new Function(
+				"console.log('Hello Word')"
+			)
+			
+			
+			fun()
+			fun()
+			
+			// 方式二：
+			function func2(name){
+				console.log('我的名字是：' + name)
+			}
+			
+			func2('张依');
+			
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html> 

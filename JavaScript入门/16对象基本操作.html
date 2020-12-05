@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<script type="text/javascript">
+			// 创建一个对象
+			var obj = new Object();
+			/* 添加属性
+			 *   语法：对象.属性 = 属性值;
+			 */
+			//向obj中添加一个name属性
+			obj.name = '孙悟空';
+			//向obj中添加一个gender属性
+			obj.gender = '男';
+			//向obj中添加一个age对象
+			obj.age = 18;
+			/*
+			 *  读取属性
+			 * 	语法： 对象.属性名
+			 * 
+			 * 	如果读取对象中没有的属性,不会报错 二十返回一个 undefined
+			 */
+			console.log(obj.name);
+			console.log(obj.gender);
+			console.log(obj.age);
+			console.log(obj.heelo);
+			/*
+			 *  修改属性值
+			 * 	  语法：对象.属性=新值
+			 */
+			obj.name = '猪八戒';
+			console.log(obj.name);
+			/*
+			 *  删除对象属性
+			 * 	  语法：delete 对象.属性名
+			 */
+			delete obj.age;
+			console.log(obj.age);
+			
+			/*
+			 * 	属性名
+			 *	  	属性名尽力用标识符的规范命名 如果要使用特殊的属性名，需要特殊的操作
+			 *  		添加  --> 语法：obj['属性名'] = 属性值;
+			 * 	  		读取  --> 语法：obj['属性名'];
+			 * 
+			 * 	属性值
+			 * 		Js对象中的属性值，可以是任意数据类型
+			 * 			甚至可以是一个对象
+			 */
+			
+			
+			
+			/*
+			 *  创建对象方法二
+			 * 	直接使用大括号
+			 * 	var obj = {};
+			 * 
+			 * 	添加属性
+			 * 	var obj = {
+			 * 		属性名 : 属性值,
+			 * 		属性名 : 属性值,
+			 * 		属性名 : 属性值
+			 * };
+			 * 
+			 */
+			
+			var obj2 = {
+				name : '猪八戒',
+				age :18,
+				gender : '男'
+			};
+			console.log('obj2对象的name属性值为:' + obj2.name);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

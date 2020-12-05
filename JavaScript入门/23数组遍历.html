@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			
+			for (var i = 0; i < arr.length; i++) {
+				console.log(arr[i])
+			}
+			
+			
+			
+			// froEach
+			/*
+			 *  froEach() IE8 一下不兼容
+			 * 
+			 * 	该方法需要一个函数作为参数
+			 * 
+			 * 	由我们创建但是不由我们调用，我们称之为   回调函数
+			 */
+			
+			// 数组中有几个元素就执行几次
+			arr.forEach(function(a, b, c){
+				/*
+				 *  三个参数 
+				 * 		第一个参数  当前正在遍历的元素
+				 * 		第二个参数  当前正在遍历的索引
+				 * 		第三个参数  当前正在遍历的数组
+				 */
+				console.log('元素:' + a)
+				console.log('索引:' + b)
+				console.log('数组:' + c)
+			});
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

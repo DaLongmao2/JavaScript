@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 *  	将其他的数据类型转换为String
+			 * 
+			 * 		方法一：
+			 * 			1.调用转换数据类型的toString()方法
+			 * 			2.该方法不会影响到原变量,它会将转换的结果返回
+			 *			3. null 和 undefined 两个值没有toString()方法  调用会报错
+			 * 		方法二：
+			 *  		1.调用String()函数，来转换为字符串
+			 * 			2.对于number和boolean实际上就是调用toString()方法
+			 * 			    但是对于null和undefined 就不会调用toStrong()方法，它会直接将  
+			 * 				null 转换为   'null'
+			 * 				undefined 转换为   'undefined'
+			 */
+			
+			// number 转换为 string
+			var a = 123;
+			//a = a.toString();
+			
+			a = String(a);
+			
+			console.log(a);
+			console.log(typeof a);
+			
+			/*
+			 *  将其他数据类型转换为Number
+			 *  方法一：
+			 * 		使用 Number()
+			 * 			一、字符串 --> 数字
+			 * 				1. 纯数字字符串	直接转换为	数字
+			 * ·			2. 非纯数字字符串		转换为	NaN
+			 * 				3. 字符串是一个 空串或全是空格的字符串	转换为	0
+			 * 			二、布尔 --> 数字
+			 * 				1. true --> 1
+			 * 				2. flase --> 0
+			 * 			三、null --> 数字
+			 * 				1. null --> 0
+			 * 			四、undefined --> 数字
+			 * 				1. undefined --> NaN
+			 * 
+			 * 方法二：
+			 * 		这种方法专门用于 字符串 
+			 * 		parseInt() 可以将一个字符串中的有效整数内容取出来
+			 * 			然后转换为Number
+			 * 		parseFloat() 和 parseInt()类型, 不同的是 它可以提取有效的小数		
+			 */
+			
+			// 字符串 --> 数字
+			var b = 'abc';
+			b = 2;
+			b = ' ';
+			
+			b = Number(b);
+			
+			console.log(b);
+			console.log(typeof b);
+			
+			// 布尔 --> 数字
+			var c = true;
+			c = false;
+			
+			c = Number(c);
+			
+			console.log(c);
+			console.log(typeof c);
+			
+			// parseInt() 函数 d转换为 Number
+			var d = '128px';
+			var e = '128.88px'
+			
+			d = parseInt(d);
+			e = parseFloat(e);
+			
+			console.log(d);
+			console.log(typeof d);
+				
+			console.log(e);
+			console.log(typeof e);
+			
+			/*
+			 *  将其他的数据类型转换为 Boolean值
+			 * 	方法一:
+			 * 		调用Boolean()函数来转换为布尔值
+			 * 		一、字符串 --> 布尔值
+			 * 			1.除了空串都是True
+			 *		二、数字 --> 布尔值
+			 * 			1.除了 0 和 NaN 其余都是true
+			 * 		三、 null、undefinded 都会转换为 false
+			 * 		四、对象 也会转换为 true
+			 * 
+			 * 	
+			 *  方法二：
+			 * 	 	为任意数据类型做两次非运算,即可将其转换为布尔值
+			 */		
+			
+			var f = '哈哈';
+			f = '';
+			
+			f = 1;
+			f = 0;
+			f = NaN;
+			f = -Infinity;
+			f = Infinity;
+			
+			f = null;
+			f = undefined;
+			
+			f = Boolean(f)
+			
+			console.log(f)
+			console.log(typeof f)
+			
+			// 两次 非运算
+			var f = 'hello';
+			
+			f = !!f;
+			
+			console.log(f)
+			console.log(typeof f)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

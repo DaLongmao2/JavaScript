@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 * 	内建对象
+			 * 	宿主对象
+			 * 	自定义对象
+			 * 
+			 * 	数组(Array)
+			 *   - 数组也是一个对象
+			 *   - 它和普通的对象功能类似，也是用来存储一些值的，
+			 *   - 不同的是普通对象是通过字符串作为属性名
+			 *	 -  而数组用使用索引
+			 * 	
+			 * 	索引(index)
+			 * 	 - 从0开始的整数就是索引
+			 * 	 - 数组的存储性能比普通对象要好，在开发中我们经常使用数组来存储一些数据
+			 * 	
+			 */	
+			 
+			 // 创建数组对象=
+			 var arr = new Array();
+			 // 向数组中添加元素
+			 arr[0] = 10;
+			 arr[1] = 15;
+			 arr[2] = 16; 
+			 arr[3] = 18;
+			 
+			 // 获取长度
+			 console.log(arr.length);
+			 
+			 // 最后插入
+			 arr.push('最后1', 12, 12);
+			 arr[arr.length] = "hah";
+			 
+			 // 删除最后
+			 arr.pop();
+			 arr.pop();
+			 
+			 // 插入最前
+			 arr.unshift("像最前面加值", '22233');
+			 
+			 // 删除最前
+			 arr.shift();
+			 
+			 
+			 
+			
+			
+			
+			 
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

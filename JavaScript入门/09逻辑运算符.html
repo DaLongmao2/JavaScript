@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 *  JS中 三种运算符
+			 * 	
+			 * 	! 非
+			 * 		1.用来对一个值进行非运算
+			 * 		2.对一个布尔值进行一个取反操作
+			 * 		3.如果对非布尔值进行非运算  转换其为 布尔值 在进行非运算
+			 * 		4.为任意数据类型做两次非运算,即可将其转换为布尔值
+			 *
+			 * 	&& 与
+			 * 		1.&&可以对符号两侧的值进行与运算
+			 * 		2.只有两个值都是True则返回True
+			 * 		3.只要有一个False,就返回False
+			 * 		4.Js中 && 属于短路的与，如果第一个值为False则不会看第二个值
+			 *
+			 * 	|| 或
+			 * 		1.||可以对符号两侧的值进行或运算
+			 * 		2.只要有一个值是True则返回True  只有两个值都为False都为False才返回False
+			 */
+			// 非运算
+			var a = true;
+			a = !a;
+			console.log(a);
+			
+			var a = 10;
+			a = !!a;
+			console.log(a);
+			console.log(typeof a);
+			
+			// 与运算 
+			result = false && false;
+			console.log(result);
+			
+			
+			result = false && console.log('哈哈');
+			
+			
+			/*
+			 *  &&  || 非布尔值的情况
+			 * 	1.对于非布尔值  会先转换为布尔值 然后进行运算  并且返回  原值！
+			 * 
+			 * 	&&
+			 *	1.如果第一个值为true，则必然返回第二个值
+			 * 	2.如果第一个值为false，则直接返回第一个值
+			 * 
+			 *  ||
+			 * 	1.如果第一个值为true，直接返回第一个值
+			 * 	2.如果第一个值为false，则返回第二个值
+			 * 
+			 * 
+			 */
+			// true && true 两个值都为true，则返回后面的
+			var result = 22 && 55;
+			console.log(result);
+			console.log(typeof result);
+			
+			// false && true 两个值中有false，则返回靠前面的false
+			var result = 0 && 22; // 0
+			var result = 22 && 0; // 0
+			
+			// false && false
+			var result = NaN && 0; // NaN
+			var result = 0 && NaN; // 0
+			
+			console.log(result);
+			
+			
+			// true || true 如果第一个值为true，直接返回第一个值
+			var result = 2 || 1; // 2
+			console.log(result)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

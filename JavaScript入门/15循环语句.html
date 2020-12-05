@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 *	循环语句:
+			 * 		一、while循环
+			 * 			while(条件表达式){
+			 * 				语句...
+			 * 			}
+			 * 
+			 * 		先对条件表达式进行求值判断
+			 * 			如果为true 则执行循环体
+			 * 				循环完毕后  再次进行判断 ... 
+			 * 			如果为false 则终止
+			 * 
+			 * 
+			 * 		二、do while 循环
+			 * 			do{
+			 * 				语句...
+			 * 			}while(添加表达式)
+			 * 		
+			 * 		先执行循环体 
+			 * 		执行完毕后在执行条件表达式，如果为true则进入下次循环
+			 * 			为false则跳出循环
+			 * 		
+			 * 		三、for语句
+			 * 			for(初始化表达式;条件表达式;更新表达式){
+			 * 				语句...;
+			 * 			}
+			 * 
+			 * 		1.初始化一个变量
+			 * 		2.在循环中设置一个条件表达式
+			 * 		3.定义一个更新表达式，每次更新初始化变量
+			 * 
+			 */
+			
+			document.write('输出一次')
+			
+			var a = 1;
+
+			while(a<=2){
+				alert('哈哈哈' + a);
+				++a
+			}
+			
+			
+			var year = 0;
+			var money = 1000;
+			while(money <= 5000){
+				money *= 1.05;
+				year++;
+			}
+			console.log(year);
+			
+			
+			
+			for(var i=0; i<10; i++){
+				document.write('哈哈')
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

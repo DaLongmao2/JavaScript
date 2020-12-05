@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			var arr = [1, 2, 5, 6, 8, 1, 55, 6, 6, 8, 55, 41, 8, 1];
+			
+			// Infinity 和 -Infinity 可以用  1/0 和 -1/0 代替
+			console.log("正无穷大:" + 1/0);
+			console.log("负无穷大:" + -1/0);
+			
+			// for 循环的简写
+			for(var i=arr.length; i--;){
+				console.log(arr[i]) // 每层的循环
+			}
+			
+			// Array 来重复字符
+			var b = Array(7).join(0);
+			console.log(b);
+			
+			
+			// 使用arr.length = 0  快速清空列表
+			//arr.length = 0;
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

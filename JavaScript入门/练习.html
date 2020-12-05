@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			// 去掉 arr 数组的重复值 并输出
+			var arr = [1, 1, 1, 2, 5, 6, 8, 1, 55, 6, 6, 8, 55, 41, 8, 1];
+			for(var i=0; i<arr.length; ++i){
+				for(var j=i+1; j<arr.length; j++){
+					if(arr[i] === arr[j]){
+						arr.splice(j, 1);
+						--j;
+					}
+				}
+			}
+
+			console.log('去掉重复后的:' + arr);
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

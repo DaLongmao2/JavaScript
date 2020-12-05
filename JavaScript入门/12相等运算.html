@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*
+			 *  相等运算 用来比较两个是否相等
+			 * 		成立 返回true 反之 返回 false
+			 * 
+			 *  == 来做相等运算
+			 * 		1.当使用 == 做运算时  两个值类型不同
+			 * 			则会转换成相等类型，在进行运算
+			 * 		2.undefined 衍生的 null 所以相等
+			 * 		3.NaN 不和任何值相等，包括本事
+			 * 
+			 *  != 来做不相等
+			 * 	 	其和相等  相反
+			 * 
+			 * 	=== 来做全等
+			 * 		1.和相等类型 但是不同类型比较 不会做类型转换
+			 * 			类型不同直接返回 false
+			 * 		2.null === undefined 就是 false
+			 * 
+			 * 	!== 来做不全等
+			 * 		其和全等 相反
+			 */
+			
+			console.log(1 == 1); // true 
+			console.log('1' == 1); //true
+			console.log(true == '1'); //true
+			
+			// 特殊 没有转换为number类型
+			console.log(null == 0); //false
+			
+			// undefined 衍生的 null
+			console.log(undefined == null); //true
+			
+			// NaN 不和任何值相等，包括本事
+			console.log(NaN == null);
+			console.log(NaN == NaN);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
